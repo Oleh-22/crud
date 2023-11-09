@@ -1,0 +1,38 @@
+.form {
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 32px;
+}
+.form__alert {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  gap: 8px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+}
+.form__result {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 8px;
+}
+.form__card_title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__button {
+  text-decoration: none;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

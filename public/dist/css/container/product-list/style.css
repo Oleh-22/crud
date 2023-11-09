@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+}
+.form__card_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.form__product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  gap: 16px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+}
+.form__list_title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  color: blue;
+}
+.form__card_title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__button {
+  text-decoration: none;
+  color: blue;
+}
+.form__card_id {
+  color: gray;
+}
+.form__footer_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__card_price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

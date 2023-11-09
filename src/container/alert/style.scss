@@ -1,0 +1,43 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+  display: flex;
+  flex-direction: row;
+  padding: s.space(4);
+  gap: s.space(8);
+
+  &__alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    gap: s.space(2);
+
+    border: 1px solid s.color('light');
+    padding: s.space(5);
+    border-radius: s.space(5);
+  }
+
+  &__result {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(2);
+    gap: s.space(2);
+  }
+
+  &__card_title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: s.space(1);
+  }
+
+  &__button {
+    text-decoration: none;
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 5px;
+    color: white;
+    background-color: blue;
+  }
+}

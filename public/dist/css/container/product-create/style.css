@@ -1,0 +1,77 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 32px;
+}
+.form__title {
+  font-size: 26px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  color: blue;
+}
+.form__content {
+  display: grid;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  gap: 16px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+}
+.form__card_title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+.form__name-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.form__field__description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form__label {
+  font-size: 14px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+.form__input_description {
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+.form__description_mark {
+  font-size: 12px;
+  color: gray;
+}
+.form__button {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+  background-color: blue;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user-list li {
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
