@@ -1,0 +1,22 @@
+{{#each list}}
+<div class="form__product-card">
+    <h2 class="form__card_title">
+        {{name}}
+    </h2>
+    <p class="class form__card_description">
+        {{description}}
+    </p>
+
+    <p class="class form__card_id">
+        ID: {{id}}
+    </p>
+
+    <div class="form__footer_card">
+
+        <p class="class form__card_price">
+            {{price}}
+        </p>
+        <a class="form__button" href="/product-edit?id={{id}}">Редагувати</a>
+    </div>
+</div>
+{{/each}}

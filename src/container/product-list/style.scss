@@ -1,0 +1,63 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: s.space(4);
+  gap: s.space(8);
+
+  &__card_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+  &__product-card {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    gap: s.space(4);
+
+    border: 1px solid s.color('light');
+    padding: s.space(5);
+    border-radius: s.space(5);
+  }
+
+  &__list_title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: s.space(1);
+    color: blue;
+  }
+
+  &__card_title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: s.space(1);
+  }
+
+  &__button {
+    text-decoration: none;
+
+    color: blue;
+  }
+
+  &__card_id {
+    color: gray;
+  }
+
+  &__footer_card {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center
+  }
+
+  &__card_price {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
