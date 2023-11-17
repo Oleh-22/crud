@@ -1,0 +1,36 @@
+.card {
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 2px #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__header {
+  padding: 20px;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card__subtitle {
+  font-size: 16px;
+}
+
+.card__button {
+  border: 1px solid #ddd;
+  padding: 8px 40px;
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+}
+
+.card__button :hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

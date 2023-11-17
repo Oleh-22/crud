@@ -1,0 +1,82 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main class="main">
+
+  {{>heading title='Інформація про замовлення'}}
+  {{#with data}}
+  {{#each list}}
+  <div>
+    <div>ID: </div>
+    <span>{{id}}</span>
+  </div>
+
+  {{>divider}}
+  <div class="g__block">
+    <div>
+      <div>Імя:</div>
+      <div>{{firstname}}</div>
+    </div>
+    <div>
+      <div>Прізвище:</div>
+      <div>{{lastname}}</div>
+    </div>
+    <div>
+      <div>Телефон:</div>
+      <div>{{phone}}</div>
+    </div>
+    <div>
+      <div>Електронна пошта</div>
+      <div>{{email}}</div>
+    </div>
+  </div>
+  {{>divider}}
+  <div>
+    <div>
+      <div>Адреса доставки:</div>
+      <div>вул. Центральна 14, кв.36, м.Київ</div>
+    </div>
+    <div class="space"></div>
+    <div>
+      <div>Назва товару:</div>
+      <div>{{product.title}}</div>
+    </div>
+  </div>
+  {{>divider}}
+  <div class="g__block">
+    <div>
+      <div>Вартість товару:</div>
+      <div>{{productPrice}}</div>
+    </div>
+    <div>
+      <div>Вартість втавки:</div>
+      <div>{{deliveryPrice}}</div>
+    </div>
+    <div>
+      <div>Сума до сплати:</div>
+      <div>{{tottalPrice}}</div>
+    </div>
+    <div>
+      <div>Нараховані бонуси:</div>
+      <div>{{bonus}}</div>
+    </div>
+  </div>
+  {{>divider}}
+  {{/each}}
+  {{/with}}
+
+  <form method="GET" action='/purchase-updating?id={{id}}'>
+    {{>button text='Змінити данні'}}
+  </form>
+
+
+
+</main>
+
+{{!
+Цей код містить лише те, що буде виводитись в
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}

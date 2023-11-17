@@ -1,0 +1,37 @@
+@use '../../lib/service.scss' as s;
+
+.card {
+	border: 2px solid s.color('light');
+	border-radius: s.space(5);
+	padding: s.space(5);
+	box-shadow: 5px 5px 5px 2px s.color('light');
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+.card__header {
+	padding: s.space(5);
+}
+
+.card__title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.card__subtitle {
+	font-size: 16px;
+}
+
+.card__button {
+	border: 1px solid s.color('light');
+		padding: s.space(2) s.space(10);
+		color: white;
+		text-decoration: none;
+		background-color: blue;
+}
+
+.card__button :hover {
+color: blue;
+}

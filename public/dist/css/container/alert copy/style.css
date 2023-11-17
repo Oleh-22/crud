@@ -1,0 +1,22 @@
+.card {
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 2px #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid #ddd;
+  padding: 8px 40px;
+  color: white;
+  background-color: rgb(32, 116, 194);
+}
+
+.btn :hover {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -3,17 +3,25 @@
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
 }}
 
-<div class="form__alert">
-  <div class="form__result">
-    <h1 class="form__card_title">{{info}}</h1>
-    <p>{{description}}</p>
+<div class='al'>
+  <div class='al_1'>
+    <h1>Успішне виконання дії</h1>
+    <h4>{{info}}</h4>
+  </div>
+  <div class='al_2'>
+    <form action='/product'><button class='button'>Додати
+        новий товар</button></form>
+    <form action='/product-list'><button
+        class='button'
+      >Повернутися назад</button></form>
+
   </div>
 
-  <a class="form__button" href="/product-list">Повернутись назад</a>
 </div>
 
 {{!
 Цей код містить лише те, що буде виводитись в
+
 <body>
-  Адже наш layout/default.hbs має вже структуру HTML
-  }}
+    Адже наш layout/default.hbs має вже структуру HTML
+    }}
