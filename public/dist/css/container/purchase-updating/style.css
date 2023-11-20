@@ -1,4 +1,4 @@
-heading {
+.heading {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -6,12 +6,12 @@ heading {
 
 .heading__title {
   font-size: 24px;
-  color: #000;
+  color: blue;
 }
 
 .heading__info {
   font-size: 16px;
-  color: #000;
+  color: blue;
 }
 
 .product-card {
@@ -36,7 +36,7 @@ heading {
 
 .product-card__subtitle {
   font-size: 16px;
-  color: gray;
+  color: #BDBDBD;
 }
 
 .product-card__category {
